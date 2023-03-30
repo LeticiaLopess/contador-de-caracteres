@@ -7,11 +7,10 @@ $('textarea').on('keyup paste', function(){ // levantou a tecla, ativa a funçã
     }, 200);
 });
 
-
 $('input').on('keyup paste', function(){
     setTimeout(function() {
         var input = $('input').val();
-        var multiplica = input + 10 + Math.PI / 23 + 50
+        var multiplica = input * 10 * Math.PI / 23 + 50;
         console.log(multiplica);
         $('.calculo').text(multiplica);
     }, 200);
