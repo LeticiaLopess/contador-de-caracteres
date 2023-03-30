@@ -8,15 +8,15 @@ $('textarea').on('keyup paste', function(){ // levantou a tecla, ativa a funçã
 });
 
 
-/*
 $('input').on('keyup paste', function(){
     setTimeout(function() {
         var input = $('input').val();
         var multiplica = input + 10 + Math.PI / 23 + 50
-        console.log(multiplica)
+        console.log(multiplica);
+        $('.calculo').text(multiplica);
     }, 200);
 }); 
-*/
+
 
 // se a pessoa copiar e colar com o teclado, ok, mas se a pessoa copiar e colar com o mouse o evento não ativa por ser o keyup, por isso colocamos o paste junto. 
 
